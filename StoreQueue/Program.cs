@@ -7,12 +7,12 @@ namespace StoreQueue
     {
         static void Main(string[] args)
         {
-            Queue<int> buyers = AddCustomersBill();
+            Queue<int> buyers = AddCustomersWallet();
 
             PayCustomer(buyers);
         }
 
-        static Queue<int> AddCustomersBill()
+        static Queue<int> AddCustomersWallet()
         {
             Queue<int> buyers = new Queue<int>();
             Random random = new Random();
