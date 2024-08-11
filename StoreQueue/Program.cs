@@ -9,7 +9,7 @@ namespace StoreQueue
         {
             Queue<int> buyers = AddCustomersWallet();
 
-            PayCustomer(buyers);
+            GetServeBuyer(buyers);
         }
 
         static Queue<int> AddCustomersWallet()
@@ -28,13 +28,13 @@ namespace StoreQueue
             return buyers;
         }
 
-        static void PayCustomer(Queue<int> buyers)
+        static void GetServeBuyer(Queue<int> buyers)
         {
             int shopMoney = 0;
 
-            bool isBuyersExist = true;
+            bool isWork = true;
 
-            while (isBuyersExist)
+            while (isWork)
             {
                 int wallet = buyers.Dequeue();
                 int buyersInQueue = buyers.Count;
@@ -50,7 +50,7 @@ namespace StoreQueue
 
                 Console.Clear();
 
-                isBuyersExist = buyersInQueue > 0;
+                isWork = buyersInQueue > 0;
             }
         }
     }
