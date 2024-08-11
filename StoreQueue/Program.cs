@@ -9,7 +9,7 @@ namespace StoreQueue
         {
             Queue<int> buyers = AddCustomersWallet();
 
-            GetServeBuyer(buyers);
+            GetServeBuyers(buyers);
         }
 
         static Queue<int> AddCustomersWallet()
@@ -28,7 +28,7 @@ namespace StoreQueue
             return buyers;
         }
 
-        static void GetServeBuyer(Queue<int> buyers)
+        static void GetServeBuyers(Queue<int> buyers)
         {
             int shopMoney = 0;
 
