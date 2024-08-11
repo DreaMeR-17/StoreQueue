@@ -17,13 +17,13 @@ namespace StoreQueue
             Queue<int> buyers = new Queue<int>();
             Random random = new Random();
             int maxQueueSize = 13;
-            int maxBuyersBill = 10000;
-            int minBuyersBill = 400;
+            int maxBuyersWallet = 10000;
+            int minBuyersWallet = 400;
             int randomQueueSize = random.Next(maxQueueSize);
 
             for (int i = 0; i < randomQueueSize; i++)
             {
-                buyers.Enqueue(random.Next(minBuyersBill, maxBuyersBill));
+                buyers.Enqueue(random.Next(minBuyersWallet, maxBuyersWallet));
             }
             return buyers;
         }
